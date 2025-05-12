@@ -1,0 +1,41 @@
+.header {
+  background-image: linear-gradient(
+    224deg,
+    hsl(240, 3%, 13%) 5%,
+    hsl(240, 1%, 23%) 20%,
+    hsla(288, 98%, 66%, 0.726) 75%,
+    hsl(290, 98%, 68%) 87%,
+    hsl(295, 82%, 67%) 92%,
+    hsl(290, 93%, 77%) 96%,
+    hsl(295, 90%, 81%) 98%,
+    hsl(298, 82%, 85%) 99%,
+    hsl(300, 67%, 88%) 100%,
+    hsl(302, 53%, 90%) 100%
+  );
+  padding-bottom: 4rem;
+}
+
+.container {
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.header-container{
+    padding: 40px 10px 0 10px;
+}
+
+.header h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 200;
+  color: #ffffff;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.header h1 + p {
+  margin: 0;
+  color: #ffffff;
+  padding-bottom: 1.2rem;
+}

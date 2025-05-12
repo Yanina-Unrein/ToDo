@@ -1,0 +1,21 @@
+<section class="todoapp">
+  <app-header
+  [control]="newTaskCrtl"
+  [changeHandler]="changeHandler.bind(this)" />
+  <div class="container todoapp-wrapper">
+    <section class="main">
+      <app-task-list-component
+        [tasks]="tasksByFilter()"
+        (toggle)="updateTask($event)"
+        (delete)="deleteTask($event)"
+        (editMode)="updateTaskEditingMode($event)"
+        (updateTitle)="updateTaskText($event.index, $event.event)" />
+    </section>
+   <app-task-footer
+    [total]="tasks().length"
+    [filtered]="tasksByFilter().length"
+    [filter]="filter()"
+    (change)="changeFilter($event)"
+    (clearCompleted)="clearCompletedTasks()" />
+  </div>
+</section>
