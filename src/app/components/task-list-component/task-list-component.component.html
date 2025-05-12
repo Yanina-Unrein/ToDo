@@ -1,10 +1,11 @@
 <ul class="todo-list">
+   @for (task of tasks; track task.id; let i = $index) {
   <app-task-item
-        *ngFor="let task of tasks; index as i"
         [task]="task"
         (toggle)="toggle.emit(i)"
         (delete)="delete.emit(i)"
         (editMode)="editMode.emit(i)"
         (updateTitle)="updateTitle.emit({ index: i, event: $event })"
       />
+  }
 </ul>
