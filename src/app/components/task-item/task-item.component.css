@@ -107,3 +107,21 @@ li .edit {
 li.editing:last-child {
   margin-bottom: -1px;
 }
+
+.toggle{
+    cursor: pointer;
+}
+
+/*
+	Hack to remove background from Mobile Safari.
+	Can't use it globally since it destroys checkboxes in Firefox
+*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  li .toggle {
+    background: none;
+  }
+
+  li .toggle {
+    height: 40px;
+  }
+}
