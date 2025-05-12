@@ -1,0 +1,8 @@
+ <input
+    class="new-todo"
+    placeholder="Nueva tarea"
+    autofocus
+    type="text"
+    [formControl]="control"
+    (keydown.enter)="changeHandler()"
+/>
